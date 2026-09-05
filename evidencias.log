@@ -1760,4 +1760,68 @@ KILLED
 [ATT] 0
 [NAV] 0
 [?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git add .
-[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git comm[K[K[K[K[K[K[K[Kgit commit -m "att do nome [K[K[K[K[K[K[K[K[K[Ktu[K[Kuaz[Klizacao do [K[K[K[K[K[K[K[K[K[K[K[K[K[K[Knome alterado po[Kara scheduy[
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git comm[K[K[K[K[K[K[K[Kgit commit -m "att do nome [K[K[K[K[K[K[K[K[K[Ktu[K[Kuaz[Klizacao do [K[K[K[K[K[K[K[K[K[K[K[K[K[K[Knome alterado po[Kara scheduy[Script started on 2026-09-05 16:42:21-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="191" LINES="10"]
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lmake: 'scheduler' is up to date.
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make clean
+[?2004lrm -f scheduler
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lgcc scheduler.c -o scheduler
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./e[Kma[K[Ke[Kscheduler aviao [K.[K[K[K[K[K[K[K edf aviao.txt 
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ls
+[?2004lMakefile  README.md  aviao.txt  edf_lhass.out  evidencias.log  rate_lhass.out  [0m[01;32mscheduler[0m  scheduler.c
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ rm -f edf_lhass.out 
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ls
+[?2004lMakefile  README.md  aviao.txt  evidencias.log  rate_lhass.out  [0m[01;32mscheduler[0m  scheduler.c
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ rm[K[Kmake clean
+[?2004lrm -f scheduler
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ls
+[?2004lMakefile  README.md  aviao.txt  evidencias.log  rate_lhass.out  scheduler.c
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ rm -f e[Krate_lhass.out 
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ls
+[?2004lMakefile  README.md  aviao.txt  evidencias.log  scheduler.c
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ma[K[Kgit add .
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git cm[Kommit -mk [K[K "renomeei [K[K[K[Kee[K[K[K[K[K[K[Kalterei o nome do arquivo e no makefile para scheduler por exigencia do enunciado"
+[?2004l[main 566d29f] alterei o nome do arquivo e no makefile para scheduler por exigencia do enunciado
+ 6 files changed, 627 insertions(+), 36 deletions(-)
+ delete mode 100644 edf_lhass.out
+ delete mode 100755 escalonador
+ delete mode 100644 rate_lhass.out
+ rename escalonador.c => scheduler.c (100%)
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git p[K[K[K[K[Kexit
+[?2004lexit
+
+Script done on 2026-09-05 16:43:54-03:00 [COMMAND_EXIT_CODE="0"]
+Kler, ex[K[Ktava [K[K[K[K[Knome pedido no ecn[K[Knunciado[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kscript -a evidencias.log 
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lmake: 'scheduler' is up to date.
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make clean
+[?2004lrm -f scheduler
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lgcc scheduler.c -o scheduler
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./e[Kma[K[Ke[Kscheduler aviao [K.[K[K[K[K[K[K[K edf aviao.txt 
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ls
+[?2004lMakefile  README.md  aviao.txt  edf_lhass.out  evidencias.log  rate_lhass.out  [0m[01;32mscheduler[0m  scheduler.c
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ rm -f edf_lhass.out 
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ls
+[?2004lMakefile  README.md  aviao.txt  evidencias.log  rate_lhass.out  [0m[01;32mscheduler[0m  scheduler.c
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ rm[K[Kmake clean
+[?2004lrm -f scheduler
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ls
+[?2004lMakefile  README.md  aviao.txt  evidencias.log  rate_lhass.out  scheduler.c
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ rm -f e[Krate_lhass.out 
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ls
+[?2004lMakefile  README.md  aviao.txt  evidencias.log  scheduler.c
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ma[K[Kgit add .
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git cm[Kommit -mk [K[K "renomeei [K[K[K[Kee[K[K[K[K[K[K[Kalterei o nome do arquivo e no makefile para scheduler por exigencia do enunciado"
+[?2004l[main 566d29f] alterei o nome do arquivo e no makefile para scheduler por exigencia do enunciado
+ 6 files changed, 627 insertions(+), 36 deletions(-)
+ delete mode 100644 edf_lhass.out
+ delete mode 100755 escalonador
+ delete mode 100644 rate_lhass.out
+ rename escalonador.c => scheduler.c (100%)
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git p[K[K[K[K[Kexit
+[?2004lexit
+Script done.
+[?2004h]0;
