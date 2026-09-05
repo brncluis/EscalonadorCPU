@@ -1,5 +1,5 @@
-escalonador:
-	gcc escalonador.c -o escalonador
+scheduler:
+	gcc scheduler.c -o scheduler
 
 clean:
-	rm -f escalonador
+	rm -f scheduler

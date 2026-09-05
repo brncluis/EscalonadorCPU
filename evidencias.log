@@ -1137,3 +1137,627 @@ To https://github.com/brncluis/EscalonadorCPU.git
 [?2004lexit
 
 Script done on 2026-09-05 16:14:14-03:00 [COMMAND_EXIT_CODE="0"]
+Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 4.69 KiB | 2.34 MiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/brncluis/EscalonadorCPU.git
+   cd90915..3c17d6e  main -> main
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ exit
+[?2004lexit
+Script done.
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git add .
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git commit -m "envios [K[K dos logs"
+[?2004l[main 926b400] envio dos logs
+ 1 file changed, 130 insertions(+), 1 deletion(-)
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git push
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 1.40 KiB | 1.40 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/brncluis/EscalonadorCPU.git
+   3c17d6e..926b400  main -> main
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ script -a evc
+[?2004lScript started, output log file is 'evc'.
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ s[Kscript 0a[K[K-a evidencias.log 
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [7m./escalonador edf aviao.txt[27m
+[7mcat edf_lhass.out[27m[A]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./escalonador edf aviao.txt
+cat edf_lhass.out
+[?2004lEXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+idle for 12 units
+LOST DEADLINES
+[ATT] 0
+[NAV] 0
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 2
+KILLED
+[ATT] 0
+[NAV] 0
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idleScript started on 2026-09-05 16:18:44-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="191" LINES="10"]
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [7m./escalonador edf aviao.txt[27m
+[7mcat edf_lhass.out[27m[A]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./escalonador edf aviao.txt
+cat edf_lhass.out
+[?2004lEXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+idle for 12 units
+LOST DEADLINES
+[ATT] 0
+[NAV] 0
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 2
+KILLED
+[ATT] 0
+[NAV] 0
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+[7midle for 12 units[27m
+[7mLOST DEADLINES[27m
+[7m[ATT] 0[27m
+[7m[NAV] 0[27m
+[7mCOMPLETE EXECUTION[27m
+[7m[ATT] 5[27m
+[7m[NAV] 2[27m
+[7mKILLED[27m
+[7m[ATT] 0[27m
+[7m[NAV] 0[27m[A[A[A[A[A[A[A[A[Aidle for 12 units
+LOST DEADLINES
+[ATT] 0
+[NAV] 0
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 2
+KILLED
+[ATT] 0
+[1P[NAV] [K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 unit[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 uni[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 un[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lha for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+[7midle for 12 units[27m
+[7mLOST DEADLINES[27m
+[7m[ATT] 0[27m
+[7m[NAV] 0[27m
+[7mCOMPLETE EXECUTION[27m
+[7m[ATT] 5[27m
+[7m[NAV] 2[27m
+[7mKILLED[27m
+[7m[ATT] 0[27m
+[7m[NAV] 0[27m[A[A[A[A[A[A[A[A[Aidle for 12 units
+LOST DEADLINES
+[ATT] 0
+[NAV] 0
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 2
+KILLED
+[ATT] 0
+[1P[NAV] [K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 unit[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 uni[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 un[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 u[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 [H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 unitss[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 u[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 [H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for [H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle fo[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle f[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle [H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idl[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for s - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for [H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle fo[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle f[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle [H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idl[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+id[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+i[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+id[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+i[H[2J]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ EXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ e[Kc[Kclear
+[?2004l[H[2J[3J[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ sc[K[Kmake clean 
+[?2004lrm -f escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make 
+[?2004lgcc escalonador.c -o escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make cela [K[K[K[K[K[K[K[K[K[K.q°[K[K/escalonador aviao [K.txt [K[K[K[K[K[K[K[K[Ke[K[Kedf aviao.txt cat edf_lhass.out [K[K[K[K[K[K[K[K[K[Klhass.out 
+[?2004lErro: uso ./escalonador (rate ou edf) <arquivo>
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./e[Kescalonador edf aviao.txt && cat edf_lhass.out 
+[?2004lEXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATC[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ e[Kc[Kclear
+[?2004l[H[2J[3J[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ sc[K[Kmake clean 
+[?2004lrm -f escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make 
+[?2004lgcc escalonador.c -o escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make cela [K[K[K[K[K[K[K[K[K[K.q°[K[K/escalonador aviao [K.txt [K[K[K[K[K[K[K[K[Ke[K[Kedf aviao.txt cat edf_lhass.out [K[K[K[K[K[K[K[K[K[Klhass.out 
+[?2004lErro: uso ./escalonador (rate ou edf) <arquivo>
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./e[Kescalonador edf aviao.txt && cat edf_lhass.out 
+[?2004lEXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+idle for 12 units
+LOST DEADLINES
+[ATT] 0
+[NAV] 0
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 2
+KILLED
+[ATT] 0
+[NAV] 0
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [7mchmod +x testes_erro.sh[27mchmod +x testes_erro.sh
+[?2004lchmod: cannot access 'testes_erro.sh': No such file or directory
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make clean
+[?2004lrm -f escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lgcc escalonador.c -o escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [7mchmod +x testes_erro.sh[27m
+[7m./testes_erro.sh[27m[A]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@T] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+idle for 12 units
+LOST DEADLINES
+[ATT] 0
+[NAV] 0
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 2
+KILLED
+[ATT] 0
+[NAV] 0
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [7mchmod +x testes_erro.sh[27mchmod +x testes_erro.sh
+[?2004lchmod: cannot access 'testes_erro.sh': No such file or directory
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make clean
+[?2004lrm -f escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lgcc escalonador.c -o escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [7mchmod +x testes_erro.sh[27m
+[7m./testes_erro.sh[27m[A]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ chmod +x testes_erro.sh
+./testes_erro.sh
+[?2004lchmod: cannot access 'testes_erro.sh': No such file or directory
+bash: ./testes_erro.sh: No such file or directory
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [7mchmod +x testeserros.sh[27m
+[7m./testeserros.sh[27m[A]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ chmod +x testeserros.sh
+./testeserros.sh
+[?2004lErro: uso ./escalonador (rate ou edf) <arquivo>
+OK:    sem argumentos (codigo=255, nenhum .out criado)
+Erro digitou xyz um algoritmo invalido use 'rate' ou 'edf'
+ OK:    algoritmo invalido (xyz) (codigo=255, nenhum .out criado)
+Erro arquivo nao foi aberto 
+OK:    arquivo inexistente (codigo=255, nenhum .out criado)
+Erro: tempo invalido
+OK:    tempo total nao numerico (codigo=255, nenhum .out criado)
+Erro faltou passar 4 itens
+OK:    campo faltando na linha de tarefa (codigo=255, nenhum .out criado)
+Erro passe apenas numeros positivos no txt  
+OK:    campo nao numerico na linha de tarefa (codigo=255, nenhum .out criado)
+Erro passe conforme essa regra  C <= D <= P
+OK:    duracao > deadline (C > D) (codigo=255, nenhum .out criado)
+Erro passe conforme essa regra  C <= D <= P
+OK:    deadline > periodo (D > P) (codigo=255, nenhum .out criado)
+
+===== 8/8 testes passaram =====
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ exit
+[?2004lexit
+
+Script done on 2026-09-05 16:27:10-03:00 [COMMAND_EXIT_CODE="0"]
+luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ chmod +x testes_erro.sh
+./testes_erro.sh
+[?2004lchmod: cannot access 'testes_erro.sh': No such file or directory
+bash: ./testes_erro.sh: No such file or directory
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [7mchmod +x testeserros.sh[27m
+[7m./testeserros.sh[27m[A]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ chmod +x testeserros.sh
+./testeserros.sh
+[?2004lErro: uso ./escalonador (rate ou edf) <arquivo>
+OK:    sem argumentos (codigo=255, nenhum .out criado)
+Erro digitou xyz um algoritmo invalido use 'rate' ou 'edf'
+ OK:    algoritmo invalido (xyz) (codigo=255, nenhum .out criado)
+Erro arquivo nao foi aberto 
+OK:    arquivo inexistente (codigo=255, nenhum .out criado)
+Erro: tempo invalido
+OK:    tempo total nao numerico (codigo=255, nenhum .out criado)
+Erro faltou passar 4 itens
+OK:    campo faltando na linha de tarefa (codigo=255, nenhum .out criado)
+Erro passe apenas numeros positivos no txt  
+OK:    campo nao numerico na linha de tarefa (codigo=255, nenhum .out criado)
+Erro passe conforme essa regra  C <= D <= P
+OK:    duracao > deadline (C > D) (codigo=255, nenhum .out criado)
+Erro passe conforme essa regra  C <= D <= P
+OK:    deadline > periodo (D > P) (codigo=255, nenhum .out criado)
+
+===== 8/8 testes passaram =====
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ exit
+[?2004lexit
+Script done.
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ rm -f escalonador 
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ rm -f [K[K[K[K[K[Kmake clean
+[?2004lrm -f scheduler
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lgcc scheduler.c -o scheduler
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./e[Kscheduler rate aviao.txt 
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ls
+[?2004lMakefile  README.md  aviao.txt  evidencias.log  rate_lhass.out  [0m[01;32mscheduler[0m  scheduler.c
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ cat av[K[K[K rate_lhass.out 
+[?2004lEXECUTION BY RATE
+[ATT] for 8 units - F
+[NAV] for 12 units - H
+[ATT] for 8 units - F
+[NAV] for 2 units - L
+idle for 10 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+idle for 12 units
+LOST DEADLINES
+[ATT] 0
+[NAV] 1
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 1
+KILLED
+[ATT] 0
+[NAV] 0
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git add .
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git comm[K[K[K[K[K[K[K[Kgit commit -m "att do nome [K[K[K[K[K[K[K[K[K[Ktu[K[Kuaz[Klizacao do [K[K[K[K[K[K[K[K[K[K[K[K[K[K[Knome alterado po[Kara scheduy[
