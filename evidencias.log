@@ -690,23 +690,80 @@ ro inteiro positivo"
 Script done on 2026-09-04 23:43:31-03:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-09-05 10:59:15-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="101" LINES="10"]
 [?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
-[?2004lmake: 'escalonador' is up to date.
+[?2004l
+make: 'escalonador' is up to date.
 [?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make clean
+[?2004l
+rm -f escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004l
+gcc escalonador.c -o escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./escalonador edf aviao.txt 
+[?2004l
+12
+0
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ es[K[K.q[K/escalonador edf aviao.txt 
+[?2004l
+12
+0
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ .[Kmake clean
+[?2004l
+rm -f escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ,[Kmake
+[?2004l
+gcc escalonador.c -o escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./escalonador  [Kedf aviao.txt 
+[?2004l
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ exit
+[?2004l
+exit
+
+Script done on 2026-09-05 10:59:48-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-05 11:30:26-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="101" LINES="10"]
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git add .
+[?2004l
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git commit -m "adicionado variaveis di 
+nami[K[K[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K qu 
+e irao mudar no [K[Ka struct [K. [K[K, inicializaTarefas que ini[K[K[Kinicia os valores mutaveis das tarefas com 0, [K [K[K e escalona 
+Tarefas que po [Kr enquanto só identifica qual a tarefa que e[Kcheco[K[Kgou naquele ins[K[Knstante e atribui o deadline 
+ real dela dentro do processo"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kl [K, proxChegada e restante dela dentro daquele processo [K "
+[?2004l
+[main edf2b56] adicionado variaveis que irao mudar na struct, inicializaTarefas que inicia os valores mutaveis das tarefas com 0 e escalonaTarefas que por enquanto só identifica qual a tarefa que chegou naquele instante e atribui o deadline real, proxChegada e restante dela dentro daquele processo
+ 4 files changed, 63 insertions(+), 1 deletion(-)
+ delete mode 100755 escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git push[K[K[K[K[K[K[K[Kexit
+[?2004l
+exit
+
+Script done on 2026-09-05 11:36:49-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-05 11:51:23-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="101" LINES="10"]
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lgcc escalonador.c -o escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ma[K[Kmake clean
 [?2004lrm -f escalonador
 [?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
 [?2004lgcc escalonador.c -o escalonador
-[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./escalonador edf aviao.txt 
-[?2004l12
-0
-[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ es[K[K.q[K/escalonador edf aviao.txt 
-[?2004l12
-0
-[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ .[Kmake clean
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ sd[K[K./escalonador a[Kaviao.txt [K[K[K[K[K[K[K[K[K[Kedf aviao.txt 
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make[K[K[K[Kmake clean
 [?2004lrm -f escalonador
-[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ,[Kmake
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
 [?2004lgcc escalonador.c -o escalonador
-[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./escalonador  [Kedf aviao.txt 
-[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ exit
-[?2004lexit
-
-Script done on 2026-09-05 10:59:48-03:00 [COMMAND_EXIT_CODE="0"]
+[01m[Kescalonador.c:[m[K In function ‘[01m[KescolheMelhorTarefa[m[K’:
+[01m[Kescalonador.c:137:20:[m[K [01;31m[Kerror: [m[Kassignment to ‘[01m[KTarefa *[m[K’ from ‘[01m[Kint[m[K’ makes pointer from integer without a cast [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+  137 |         if (melhor [01;31m[K=[m[K NULL || muda_prioridade) {
+      |                    [01;31m[K^[m[K
+make: *** [Makefile:2: escalonador] Error 1
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lgcc escalonador.c -o escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lmake: 'escalonador' is up to date.
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make lcea[K[K[K[Kclean
+[?2004lrm -f escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lgcc escalonador.c -o escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ mkake[K[K[K[Kake
+[?2004lmake: 'escalonador' is up to date.
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make clean

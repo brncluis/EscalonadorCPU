@@ -103,6 +103,44 @@ void inicializaTarefas(Tarefa tarefas[], int totalTarefas) {
     }
 }
 
+int temPrioridadeMaior(Tarefa *candidata, Tarefa *melhorAtual, int usaEdf) {
+
+    if (usaEdf == 1) {
+
+        if (candidata->deadlineAtual != melhorAtual->deadlineAtual) {
+            return candidata->deadlineAtual < melhorAtual->deadlineAtual;
+        }
+
+    } else {
+
+        if (candidata->periodo != melhorAtual->periodo) {
+            return candidata->periodo < melhorAtual->periodo;
+        }
+    }
+
+    return candidata->ordem < melhorAtual->ordem;
+}
+
+
+Tarefa *escolheMelhorTarefa(Tarefa tarefas[], int totalTarefas, int usaEdf) {
+
+    Tarefa *melhor = NULL;
+
+    for (int i = 0; i < totalTarefas; i++) {
+
+        if (tarefas[i].restante == 0) {
+            continue;
+        }
+
+        if (melhor == NULL || temPrioridadeMaior(&tarefas[i], melhor, usaEdf)) {
+            melhor = &tarefas[i];
+        }
+    }
+
+    return melhor;
+}
+
+
 void escalonaTarefas(Tarefa tarefas[], int totalTarefas, int tempoTotal) {
 
     for (int instante = 0; instante < tempoTotal; instante++) {
