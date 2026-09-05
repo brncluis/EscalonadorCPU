@@ -18,6 +18,38 @@ typedef struct {
 
 } Tarefa;
 
+typedef struct {
+    char nome[32];
+    int inicio;
+    int fim;
+    char status;
+} Intervalo;
+
+typedef struct {
+    Intervalo intervalos[512];
+    int totalIntervalos;
+} Historico;
+
+void fechaIntervalo(Historico *historico, Tarefa *tarefa, int inicio, int fim, char status) {
+
+    if (inicio >= fim) {
+        return;
+    }
+
+    Intervalo *intervalo = &historico->intervalos[historico->totalIntervalos];
+    historico->totalIntervalos++;
+
+    if (tarefa != NULL) {
+        strcpy(intervalo->nome, tarefa->nome);
+    } else {
+        intervalo->nome[0] = '\0';
+    }
+
+    intervalo->inicio = inicio;
+    intervalo->fim = fim;
+    intervalo->status = status;
+}
+
 int parseIntPositivo(char *texto, int *destino) {
 
     char *fim;
@@ -141,15 +173,21 @@ Tarefa *escolheMelhorTarefa(Tarefa tarefas[], int totalTarefas, int usaEdf) {
 }
 
 
-void escalonaTarefas(Tarefa tarefas[], int totalTarefas, int tempoTotal, int usaEdf) {
+void escalonaTarefas(Tarefa tarefas[], int totalTarefas, int tempoTotal, int usaEdf, Historico *historico) {
+
+    Tarefa *aberto = NULL;
+    int inicioIntervalo = 0;
 
     for (int instante = 0; instante < tempoTotal; instante++) {
+
+        Tarefa *perdidaAgora = NULL;
 
         for (int i = 0; i < totalTarefas; i++) {
 
             if (tarefas[i].restante > 0 && instante == tarefas[i].deadlineAtual) {
                 tarefas[i].perdidas++;
                 tarefas[i].restante = 0;
+                perdidaAgora = &tarefas[i];
             }
         }
 
@@ -164,6 +202,27 @@ void escalonaTarefas(Tarefa tarefas[], int totalTarefas, int tempoTotal, int usa
 
         Tarefa *executando = escolheMelhorTarefa(tarefas, totalTarefas, usaEdf);
 
+
+        if (executando != aberto) {
+
+            char status = '\0';
+
+            if (aberto != NULL) {
+                if (aberto == perdidaAgora) {
+                    status = 'L';
+                } else if (aberto->restante == 0) {
+                    status = 'F';
+                } else {
+                    status = 'H';
+                }
+            }
+
+            fechaIntervalo(historico, aberto, inicioIntervalo, instante, status);
+
+            aberto = executando;
+            inicioIntervalo = instante;
+        }
+
         if (executando != NULL) {
             executando->restante--;
 
@@ -173,11 +232,18 @@ void escalonaTarefas(Tarefa tarefas[], int totalTarefas, int tempoTotal, int usa
         }
     }
 
-    Tarefa *ultimaExecutando = escolheMelhorTarefa(tarefas, totalTarefas, usaEdf);
+    char statusFinal = '\0';
 
-    if (ultimaExecutando != NULL) {
-            ultimaExecutando->mortas++;
+    if (aberto != NULL) {
+        if (aberto->restante == 0) {
+            statusFinal = 'F';
+        } else {
+            statusFinal = 'H';
+            aberto->mortas++;
+        }
     }
+
+    fechaIntervalo(historico, aberto, inicioIntervalo, tempoTotal, statusFinal);
 
 }
 
@@ -261,7 +327,11 @@ int main(int argc, char *argv[]) {
     fclose(arquivo);
     
     inicializaTarefas(tarefas, totalTarefas);
-    escalonaTarefas(tarefas, totalTarefas, tempoTotal, usaEdf);
+
+    Historico historico;
+    historico.totalIntervalos = 0;
+
+    escalonaTarefas(tarefas, totalTarefas, tempoTotal, usaEdf, &historico);
 
     for (int i = 0; i < totalTarefas; i++) {
 

@@ -902,4 +902,16 @@ NAV: concluidas=2 perdidas=0 mortas=0
 gcc escalonador.c -o escalonador
 [?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./escalonador m[Ke[Kd[Kedf aviao.txt 
 [?2004lATT: concluidas=1 perdidas=0 mortas=1
-[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Esca
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git add [K[K[K[K[K[K[K[Kgi[K[K./escalonador edf aviao.txt 
+[?2004lATT: concluidas=1 perdidas=0 mortas=1
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./e[K[K[Kmake clean
+[?2004lrm -f escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ .git ad[K[K[K[K[K[K[Kguit [K[K[K[Kit add .
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git commit -m "adicao da verificacao de perdidas, mortas e concluidas"
+[?2004l[main fc6992f] adicao da verificacao de perdidas, mortas e concluidas
+ 4 files changed, 68 insertions(+), 8 deletions(-)
+ delete mode 100755 escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ git [K[K[K[Kexit
+[?2004lexit
+
+Script done on 2026-09-05 14:19:03-03:00 [COMMAND_EXIT_CODE="0"]
