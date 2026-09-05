@@ -32,6 +32,56 @@ int parseIntPositivo(char *texto, int *destino) {
     
 }
 
+int tokenizacao(char *entrada, char *tokens[]) {
+
+    int n = 0;
+    char *token = strtok(entrada, " \t\r\n");
+
+    while (token != NULL && n < 4) {
+        tokens[n] = token;
+        n++;
+        token = strtok(NULL, " \t\r\n");
+    }
+
+    return n;
+}
+
+int tokensTarefas(char *entrada, Tarefa *tarefa) {
+
+    char linhaEntrada[256];
+    strncpy(linhaEntrada, entrada, sizeof(linhaEntrada) - 1);
+    linhaEntrada[sizeof(linhaEntrada) - 1] = '\0';
+
+    char *tokens[4];
+
+    int totalTokens = tokenizacao(linhaEntrada, tokens);
+
+    if (totalTokens < 4) {
+        fprintf(stderr, "Erro faltou passar 4 itens\n");
+        return -1;
+    }
+
+    if (parseIntPositivo(tokens[1], &tarefa->periodo) != 0 ||
+        parseIntPositivo(tokens[2], &tarefa->deadline) != 0 ||
+        parseIntPositivo(tokens[3], &tarefa->duracao)  != 0) {
+
+        fprintf(stderr, "Erro passe apenas numeros positivos no txt  \n");
+        return -1;
+
+    }
+
+    if (tarefa->duracao > tarefa->deadline || tarefa->deadline > tarefa->periodo) {
+        fprintf(stderr, "Erro passe conforme essa regra  C <= D <= P\n");
+        return -1;
+    }
+
+    strncpy(tarefa->nome, tokens[0], sizeof(tarefa->nome) - 1);
+    tarefa->nome[sizeof(tarefa->nome) - 1] = '\0';
+    return 0;
+
+}
+
+
 int main(int argc, char *argv[]) {
 
     if (argc != 3) {
@@ -78,6 +128,32 @@ int main(int argc, char *argv[]) {
 
     if (parseIntPositivo(linha, &tempoTotal) != 0) {
         fprintf(stderr, "Erro: tempo invalido\n");
+        fclose(arquivo);
+        return -1;
+    }
+
+    Tarefa tarefas[64];
+    int totalTarefas = 0;
+
+    while (fgets(linha, sizeof(linha), arquivo) != NULL) {
+
+        if (totalTarefas >= 64) {
+            fprintf(stderr, "Erro passe no max 64 tarwfas\n");
+            fclose(arquivo);
+            return -1;
+        }
+
+        if (tokensTarefas(linha, &tarefas[totalTarefas]) != 0) {
+            fclose(arquivo);
+            return -1;
+        }
+
+        tarefas[totalTarefas].ordem = totalTarefas;
+        totalTarefas++;
+    }
+
+    if (totalTarefas == 0) {
+        fprintf(stderr, "Erro nenhuma tarefa econtrada\n");
         fclose(arquivo);
         return -1;
     }
