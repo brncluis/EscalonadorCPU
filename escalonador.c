@@ -10,6 +10,28 @@ typedef struct {
     int ordem;
 } Tarefa;
 
+int parseIntPositivo(char *texto, int *destino) {
+
+    char *fim;
+    long valor = strtol(texto, &fim, 10);
+
+    if (fim == texto) {
+        return -1;
+    }
+
+    if (*fim != '\0' && *fim != '\n' && *fim != '\r') {
+        return -1;
+    }
+
+    if (valor <= 0) {
+        return -1;
+    }
+
+    *destino = (int) valor;
+    return 0;
+    
+}
+
 int main(int argc, char *argv[]) {
 
     if (argc != 3) {
@@ -37,6 +59,30 @@ int main(int argc, char *argv[]) {
         return -1;
 
     }
+
+    FILE *arquivo = fopen(argv[2], "r");
+
+    if (arquivo == NULL) {
+        fprintf(stderr, "Erro arquivo nao foi aberto \n");
+        return -1;
+    }
+
+    char linha[256];
+    int tempoTotal;
+
+    if (fgets(linha, sizeof(linha), arquivo) == NULL) {
+        fprintf(stderr, "Arquivo vazio\n");
+        fclose(arquivo);
+        return -1;
+    }
+
+    if (parseIntPositivo(linha, &tempoTotal) != 0) {
+        fprintf(stderr, "Erro: tempo invalido\n");
+        fclose(arquivo);
+        return -1;
+    }
+
+    fclose(arquivo);
 
     return 0;
 
