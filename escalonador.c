@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+typedef struct {
+    char nome[32];
+    int periodo;
+    int deadline;
+    int duracao;
+    int ordem;
+} Tarefa;
+
 int main(int argc, char *argv[]) {
 
     if (argc != 3) {
