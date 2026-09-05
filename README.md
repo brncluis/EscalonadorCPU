@@ -1,1 +1,1 @@
-# EscalonadorCPU
+# Escalonador de CPU - Sistemas operacionais 
