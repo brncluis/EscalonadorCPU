@@ -688,3 +688,25 @@ ro inteiro positivo"
 ]666;vte.shell.preexec!\exit
 
 Script done on 2026-09-04 23:43:31-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-05 10:59:15-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="101" LINES="10"]
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lmake: 'escalonador' is up to date.
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make clean
+[?2004lrm -f escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ make
+[?2004lgcc escalonador.c -o escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./escalonador edf aviao.txt 
+[?2004l12
+0
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ es[K[K.q[K/escalonador edf aviao.txt 
+[?2004l12
+0
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ .[Kmake clean
+[?2004lrm -f escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ,[Kmake
+[?2004lgcc escalonador.c -o escalonador
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ ./escalonador  [Kedf aviao.txt 
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/ProjetoSO_1/Escalonador/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/ProjetoSO_1/Escalonador/lhass[00m$ exit
+[?2004lexit
+
+Script done on 2026-09-05 10:59:48-03:00 [COMMAND_EXIT_CODE="0"]

@@ -8,6 +8,14 @@ typedef struct {
     int deadline;
     int duracao;
     int ordem;
+
+    int restante;
+    int deadlineAtual;
+    int proximaChegada;
+    int concluidas;
+    int perdidas;
+    int mortas;
+
 } Tarefa;
 
 int parseIntPositivo(char *texto, int *destino) {
@@ -79,6 +87,35 @@ int tokensTarefas(char *entrada, Tarefa *tarefa) {
     tarefa->nome[sizeof(tarefa->nome) - 1] = '\0';
     return 0;
 
+}
+
+void inicializaTarefas(Tarefa tarefas[], int totalTarefas) {
+
+    for (int i = 0; i < totalTarefas; i++) {
+
+        tarefas[i].restante = 0;
+        tarefas[i].deadlineAtual = 0;
+        tarefas[i].proximaChegada = 0;
+        tarefas[i].concluidas = 0;
+        tarefas[i].perdidas = 0;
+        tarefas[i].mortas = 0;
+
+    }
+}
+
+void escalonaTarefas(Tarefa tarefas[], int totalTarefas, int tempoTotal) {
+
+    for (int instante = 0; instante < tempoTotal; instante++) {
+
+        for (int i = 0; i < totalTarefas; i++) {
+
+            if (instante == tarefas[i].proximaChegada) {
+                tarefas[i].restante = tarefas[i].duracao;
+                tarefas[i].deadlineAtual = instante + tarefas[i].deadline;
+                tarefas[i].proximaChegada += tarefas[i].periodo;
+            }
+        }
+    }
 }
 
 
@@ -159,6 +196,8 @@ int main(int argc, char *argv[]) {
     }
 
     fclose(arquivo);
+    
+    inicializaTarefas(tarefas, totalTarefas);
 
     return 0;
 
