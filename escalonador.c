@@ -30,6 +30,57 @@ typedef struct {
     int totalIntervalos;
 } Historico;
 
+void escreveSaida(int usaEdf, Historico *historico, Tarefa tarefas[], int totalTarefas) {
+
+    char nomeArquivo[64];
+
+    if (usaEdf) {
+        strcpy(nomeArquivo, "edf_lhass.out");
+    } else {
+        strcpy(nomeArquivo, "rate_lhass.out");
+    }
+
+    FILE *arquivo = fopen(nomeArquivo, "w");
+    if (arquivo == NULL) {
+        fprintf(stderr, "Erro: nao foi possivel criar '%s'\n", nomeArquivo);
+        return;
+    }
+
+    if (usaEdf) {
+        fprintf(arquivo, "EXECUTION BY EDF\n");
+    } else {
+        fprintf(arquivo, "EXECUTION BY RATE\n");
+    }
+
+    for (int i = 0; i < historico->totalIntervalos; i++) {
+        Intervalo *intervalo = &historico->intervalos[i];
+        int duracao = intervalo->fim - intervalo->inicio;
+
+        if (intervalo->nome[0] == '\0') {
+            fprintf(arquivo, "idle for %d units\n", duracao);
+        } else {
+            fprintf(arquivo, "[%s] for %d units - %c\n", intervalo->nome, duracao, intervalo->status);
+        }
+    }
+
+    fprintf(arquivo, "LOST DEADLINES\n");
+    for (int i = 0; i < totalTarefas; i++) {
+        fprintf(arquivo, "[%s] %d\n", tarefas[i].nome, tarefas[i].perdidas);
+    }
+
+    fprintf(arquivo, "COMPLETE EXECUTION\n");
+    for (int i = 0; i < totalTarefas; i++) {
+        fprintf(arquivo, "[%s] %d\n", tarefas[i].nome, tarefas[i].concluidas);
+    }
+
+    fprintf(arquivo, "KILLED\n");
+    for (int i = 0; i < totalTarefas; i++) {
+        fprintf(arquivo, "[%s] %d\n", tarefas[i].nome, tarefas[i].mortas);
+    }
+
+    fclose(arquivo);
+}
+
 void fechaIntervalo(Historico *historico, Tarefa *tarefa, int inicio, int fim, char status) {
 
     if (inicio >= fim) {
@@ -333,12 +384,7 @@ int main(int argc, char *argv[]) {
 
     escalonaTarefas(tarefas, totalTarefas, tempoTotal, usaEdf, &historico);
 
-    for (int i = 0; i < totalTarefas; i++) {
-
-    printf("%s: concluidas=%d perdidas=%d mortas=%d\n",
-           tarefas[i].nome, tarefas[i].concluidas, tarefas[i].perdidas, tarefas[i].mortas);
-
-    }
+    escreveSaida(usaEdf, &historico, tarefas, totalTarefas);
 
     return 0;
 
