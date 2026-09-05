@@ -147,23 +147,38 @@ void escalonaTarefas(Tarefa tarefas[], int totalTarefas, int tempoTotal, int usa
 
         for (int i = 0; i < totalTarefas; i++) {
 
+            if (tarefas[i].restante > 0 && instante == tarefas[i].deadlineAtual) {
+                tarefas[i].perdidas++;
+                tarefas[i].restante = 0;
+            }
+        }
+
+        for (int i = 0; i < totalTarefas; i++) {
+
             if (instante == tarefas[i].proximaChegada) {
                 tarefas[i].restante = tarefas[i].duracao;
                 tarefas[i].deadlineAtual = instante + tarefas[i].deadline;
                 tarefas[i].proximaChegada += tarefas[i].periodo;
             }
         }
-    }
 
-    Tarefa *executando = escolheMelhorTarefa(tarefas, totalTarefas, usaEdf);
+        Tarefa *executando = escolheMelhorTarefa(tarefas, totalTarefas, usaEdf);
 
-    if (executando != NULL) {
-        executando->restante--;
+        if (executando != NULL) {
+            executando->restante--;
 
-        if (executando->restante == 0) {
+            if (executando->restante == 0) {
                 executando->concluidas++;
+            }
         }
     }
+
+    Tarefa *ultimaExecutando = escolheMelhorTarefa(tarefas, totalTarefas, usaEdf);
+
+    if (ultimaExecutando != NULL) {
+            ultimaExecutando->mortas++;
+    }
+
 }
 
 
