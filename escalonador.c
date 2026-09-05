@@ -141,7 +141,7 @@ Tarefa *escolheMelhorTarefa(Tarefa tarefas[], int totalTarefas, int usaEdf) {
 }
 
 
-void escalonaTarefas(Tarefa tarefas[], int totalTarefas, int tempoTotal) {
+void escalonaTarefas(Tarefa tarefas[], int totalTarefas, int tempoTotal, int usaEdf) {
 
     for (int instante = 0; instante < tempoTotal; instante++) {
 
@@ -152,6 +152,16 @@ void escalonaTarefas(Tarefa tarefas[], int totalTarefas, int tempoTotal) {
                 tarefas[i].deadlineAtual = instante + tarefas[i].deadline;
                 tarefas[i].proximaChegada += tarefas[i].periodo;
             }
+        }
+    }
+
+    Tarefa *executando = escolheMelhorTarefa(tarefas, totalTarefas, usaEdf);
+
+    if (executando != NULL) {
+        executando->restante--;
+
+        if (executando->restante == 0) {
+                executando->concluidas++;
         }
     }
 }
@@ -236,6 +246,14 @@ int main(int argc, char *argv[]) {
     fclose(arquivo);
     
     inicializaTarefas(tarefas, totalTarefas);
+    escalonaTarefas(tarefas, totalTarefas, tempoTotal, usaEdf);
+
+    for (int i = 0; i < totalTarefas; i++) {
+
+    printf("%s: concluidas=%d perdidas=%d mortas=%d\n",
+           tarefas[i].nome, tarefas[i].concluidas, tarefas[i].perdidas, tarefas[i].mortas);
+
+    }
 
     return 0;
 
