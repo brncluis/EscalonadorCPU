@@ -285,16 +285,19 @@ void escalonaTarefas(Tarefa tarefas[], int totalTarefas, int tempoTotal, int usa
 
     char statusFinal = '\0';
 
-    if (aberto != NULL) {
-        if (aberto->restante == 0) {
-            statusFinal = 'F';
-        } else {
-            statusFinal = 'H';
-            aberto->mortas++;
-        }
+    if (aberto != NULL && aberto->restante == 0) {
+        statusFinal = 'F';
+    } else if (aberto != NULL) {
+        statusFinal = 'H';
     }
 
     fechaIntervalo(historico, aberto, inicioIntervalo, tempoTotal, statusFinal);
+
+    for (int i = 0; i < totalTarefas; i++) {
+        if (tarefas[i].restante > 0) {
+            tarefas[i].mortas++;
+        }
+    }
 
 }
 
